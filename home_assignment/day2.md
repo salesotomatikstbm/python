@@ -1,14 +1,13 @@
-# Python Homework
+# Python Day 2 Homework
 
 This week’s assignment: practice Python to improve your typing and coding skills. Use VS Code and create the files below. Run each program and check the output.
 
 ## Program 1: Variables (Save as `story.py`)
 Create the storyline to explain the variables (like you did in class for the self-introduction)
 
-```markdown
-# Python Variables: The Naming Game 🏷️
 
 ## Program 2: Naming Variables (Save as `variables1.py`)
+```markdown
 ```python
 # 🟢 GOOD Variables (They follow rules!)
 student_name = "Ramesh"    # Like a proper nametag
