@@ -1,19 +1,14 @@
-Here's the corrected and enhanced version of your Python variables tutorial in Markdown format, designed specifically for young learners with clear examples, explanations, and practice exercises:
+# Python Homework
+
+This week’s assignment: practice Python to improve your typing and coding skills. Use VS Code and create the files below. Run each program and check the output.
+
+## Program 1: Variables (Save as `story.py`)
+Create the storyline to explain the variables (like you did in class for the self-introduction)
 
 ```markdown
 # Python Variables: The Naming Game 🏷️
 
-## Story Time: The Messy Backpack 🎒
-Imagine your variables are like school backpack labels:
-- Good label: "ramesh_books" (clear what's inside)
-- Bad label: "123stuff" (won't stick, starts with number)
-- Terrible label: "my things" (falls off, has space)
-
-Just like labels help find things quickly, good variable names make code easy to understand!
-
----
-
-## Program 1: Naming Variables (Save as `variables1.py`)
+## Program 2: Naming Variables (Save as `variables1.py`)
 ```python
 # 🟢 GOOD Variables (They follow rules!)
 student_name = "Ramesh"    # Like a proper nametag
@@ -42,7 +37,7 @@ print(f"Score: {math_score}/{MAX_MARKS}")
 
 ---
 
-## Program 2: Assignment Rules (Save as `variables2.py`)
+## Program 3: Assignment Rules (Save as `variables2.py`)
 ```python
 # 🟢 GOOD Assignments
 name = "Ramesh"     # Text in "quotes" 
@@ -70,7 +65,7 @@ print(f"has_dog is {type(has_dog)}")
 
 ---
 
-## Program 3: Using Variables (Save as `variables3.py`)
+## Program 4: Using Variables (Save as `variables3.py`)
 ```python
 # 🟢 GOOD Usage
 first_name = "Ramesh"
