@@ -1,6 +1,6 @@
-Here’s your PDF content converted into Markdown format:
-
 # Apple Brochure
+
+![Apple](https://images.pexels.com/photos/209439/pexels-photo-209439.jpeg)
 
 ## Apple Brochure Data
 
