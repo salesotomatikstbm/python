@@ -1,6 +1,5 @@
 Here’s your PDF content converted into Markdown format:
 
-````markdown
 # Apple Brochure
 
 ## Apple Brochure Data
@@ -62,7 +61,3 @@ print(f"Price in rupees is {price_rupees}")
 print(f"Is it healthy? {healthy}")
 ```
 
-```
-
-Do you want me to also **add images or formatting for a more brochure-like look** in Markdown? That way it could look visually appealing on a website or GitHub page.
-```
