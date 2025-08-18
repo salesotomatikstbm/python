@@ -9,3 +9,6 @@
 #### [Home Assignment](home_assignment/day02.html)
 
 ### Day 03 : Control Statements
+#### [Script](notes/day03.html)
+#### [Class Work](class_work/day03.html)
+#### [Home Assignment](home_assignment/day01.html)
