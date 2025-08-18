@@ -84,7 +84,3 @@ else:
 
 ---
 
-### **Next Class:**  
-We’ll learn about **loops** (`while` and `for`) to repeat actions! 🔄  
-
-🚀 **Remember:** Coding is like giving instructions to a robot—be clear and have fun!
