@@ -1,141 +1,128 @@
-Here's a structured **if-else homework assignment** following the same style as your previous assignments:
+**Day - 03 - Home Assignment** :
+# **Assignment 01: Practicing Arithmetic Operators** ➕➖✖️➗
+
+We will practice using **arithmetic operators** (`+`, `-`, `*`, `/`, `%`, `//`, `**`) to work with numbers.
+
+## **Objective:**
+
+Learn how arithmetic operators work in Python by applying them to simple fruit-related problems.
+
+## **Tasks:**
+
+1. Create two variables:
+
+   * `apples = 10`
+   * `mangoes = 4`
+2. Use arithmetic operators to:
+
+   * Find the **total fruits** (addition).
+   * Find the **difference** (subtraction).
+   * Find the **double apples** (multiplication).
+   * Find the **apples per basket if divided into 2 baskets** (division).
+   * Try **modulus (`%`)** to see if fruits divide evenly.
+   * Try **power (`**`)** to square a number.
+
+## **Think About:**
+
+* What happens when you divide and the result is not whole?
+* When would modulus (%) be useful in real life (e.g., sharing fruits)?
 
 ---
 
-# **Homework: Decision-Making with If-Else Statements**  
-**Objective:**  
-Practice using `if`, `elif`, and `else` to create programs that make decisions based on conditions.  
+# **Assignment 02: User Input with Operators** ⌨️
+
+Now let’s use **user input** to apply operators.
+
+## **Objective:**
+
+Learn how to take input from the user and apply operators to calculate results.
+
+## **Tasks:**
+
+1. Ask the user for **two numbers** (e.g., `x` and `y`).
+2. Show the results of:
+
+   * Sum (`x + y`)
+   * Difference (`x - y`)
+   * Product (`x * y`)
+   * Division (`x / y`)
+   * Compare which is greater (`x > y`, `x < y`)
+   * Check if they are equal (`x == y`)
+
+## **Think About:**
+
+* What happens if the user enters 0 for `y` and you try to divide?
+* How do integer vs decimal inputs change results?
 
 ---
 
-### **Task 1: Fruit Ripeness Checker** 🍏→🍎  
-Write a program that checks the ripeness of a fruit based on its color and gives advice.  
+# **Assignment 03: Even or Odd Checker (If-Else)** 🔢
 
-#### **Requirements:**  
-1. Use `input()` to ask for the fruit's **color** (e.g., "green", "yellow", "red").  
-2. Use `if-elif-else` to:  
-   - If **green** → "Not ripe yet! Wait a few days."  
-   - If **yellow** → "Almost ripe! Eat soon."  
-   - If **red** → "Perfectly ripe! Enjoy now."  
-   - For any other color → "Unknown ripeness. Be careful!"  
+Use **if-else** to check if a number is even or odd.
 
-#### **Example Code:**  
-```python
-color = input("What color is the fruit? ").lower()  
+## **Objective:**
 
-if color == "green":  
-    print("Not ripe yet! Wait a few days.")  
-elif color == "yellow":  
-    print("Almost ripe! Eat soon.")  
-elif color == "red":  
-    print("Perfectly ripe! Enjoy now.")  
-else:  
-    print("Unknown ripeness. Be careful!")  
-```
+Understand how conditions and `%` operator work in decision-making.
 
-#### **Expected Output:**  
-```text
-What color is the fruit? yellow  
-Almost ripe! Eat soon.  
-```
+## **Tasks:**
+
+1. Ask the user for a number.
+2. If the number is divisible by 2 → print `"Even Number"`.
+3. Otherwise → print `"Odd Number"`.
+
+## **Think About:**
+
+* What happens with negative numbers?
+* What happens with zero?
 
 ---
 
-### **Task 2: Apple Discount Calculator** 🛒💰  
-Calculate the final price of apples with discounts based on quantity.  
+# **Assignment 04: Grade Classifier (If-Elif-Else)** 🎓
 
-#### **Requirements:**  
-1. Use `input()` to ask for **quantity_kg** (e.g., `3`, `7`, `12`).  
-2. Use `if-elif-else` to apply discounts:  
-   - **>10kg**: 20% discount  
-   - **>5kg**: 10% discount  
-   - **≤5kg**: No discount  
-3. Print the **final price** (e.g., "Total: ₹96.40").  
+Use **if-elif-else** to classify a student’s grade.
 
-#### **Example Code:**  
-```python
-quantity = int(input("How many kg of apples? "))  
-price_per_kg = 120.5  
+## **Objective:**
 
-if quantity > 10:  
-    discount = 0.20  
-elif quantity > 5:  
-    discount = 0.10  
-else:  
-    discount = 0  
+Practice decision-making with multiple conditions.
 
-total = quantity * price_per_kg * (1 - discount)  
-print(f"Total: ₹{total:.2f}")  
-```
+## **Tasks:**
 
-#### **Expected Output:**  
-```text
-How many kg of apples? 7  
-Total: ₹759.15  
-```
+1. Ask the user for marks (0–100).
+2. Use conditions to classify:
+
+   * 90 and above → `"Grade A"`
+   * 75–89 → `"Grade B"`
+   * 50–74 → `"Grade C"`
+   * Below 50 → `"Fail"`
+
+## **Think About:**
+
+* What if the user enters more than 100 or less than 0?
+* How can you add more grades like A+ or D?
 
 ---
 
-### **Task 3: Healthy Fruit Advisor** 🥗  
-Advise whether a fruit is healthy based on its sugar content (grams per 100g).  
+# **Assignment 05: Temperature Advisor (If-Elif-Else with User Input)** 🌡️
 
-#### **Requirements:**  
-1. Use `input()` to ask for **sugar_per_100g** (e.g., `5`, `15`, `25`).  
-2. Use `if-elif-else` to categorize:  
-   - **<10g**: "Very healthy! Great choice."  
-   - **10-20g**: "Moderate sugar. Enjoy in moderation."  
-   - **>20g**: "High sugar! Eat occasionally."  
+Use **if-elif-else** with user input to give weather advice.
 
-#### **Example Code:**  
-```python
-sugar = float(input("Sugar content (g per 100g): "))  
+## **Objective:**
 
-if sugar < 10:  
-    print("Very healthy! Great choice.")  
-elif 10 <= sugar <= 20:  
-    print("Moderate sugar. Enjoy in moderation.")  
-else:  
-    print("High sugar! Eat occasionally.")  
-```
+Combine user input with decision-making to provide different messages.
 
-#### **Expected Output:**  
-```text
-Sugar content (g per 100g): 12  
-Moderate sugar. Enjoy in moderation.  
-```
+## **Tasks:**
+
+1. Ask the user to enter the temperature (°C).
+2. Use conditions to give advice:
+
+   * Less than 15 → `"It’s Cold! Wear a jacket 🧥"`
+   * Between 15 and 30 → `"Weather is Pleasant 🙂"`
+   * More than 30 → `"It’s Hot! Stay hydrated 💧"`
+
+## **Think About:**
+
+* How would advice change for very extreme temperatures (e.g., 45°C or -5°C)?
+* Can you extend it to show `"Rainy"` or `"Snowy"` with extra inputs?
 
 ---
 
-### **Bonus Challenge: Fruit Mystery Game** 🎲  
-Create a guessing game where the user tries to guess a secret fruit (e.g., "apple").  
-
-#### **Requirements:**  
-1. Set a `secret_fruit = "apple"`.  
-2. Use `input()` to ask for guesses.  
-3. Use `if-else` to respond:  
-   - If correct → "You win! 🎉"  
-   - If wrong → "Try again! Hint: It's red."  
-
-#### **Example Code:**  
-```python
-secret_fruit = "apple"  
-guess = input("Guess the fruit: ").lower()  
-
-if guess == secret_fruit:  
-    print("You win! 🎉")  
-else:  
-    print("Try again! Hint: It's red.")  
-```
-
----
-
-### **Submission Guidelines:**  
-1. Save your code as `fruit_decisions.py`.  
-2. Test all scenarios (e.g., try different colors/quantities).  
-3. **Stretch Goal**: Add more conditions (e.g., check if the fruit is organic).  
-
-**Tip:** Use comments (`#`) to explain your logic!  
-
---- 
-
-This follows the same **interactive, variable-driven** style as your previous assignments while focusing on **conditional logic**. Let me know if you'd like any modifications!

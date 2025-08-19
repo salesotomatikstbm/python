@@ -1,6 +1,42 @@
+**Day - 03 - Class Flow** :
+
+**Apple Operator Playground** 🍎:
+
+---
+
+
+```python
+# Equal to (==)
+print("Is the apple red?", "red" == "red")   # True
+
+# Not equal (!=)
+print("Is the apple not green?", "red" != "green")   # True
+
+# Greater than (>)
+print("Is apple price greater than budget?", 60 > 50)   # True
+
+# Less than (<)
+print("Is apple price less than budget?", 40 < 50)   # True
+
+# Greater than or equal (>=)
+print("Do you have enough money?", 50 >= 50)   # True
+
+# Less than or equal (<=)
+print("Is apple weight small?", 150 <= 200)   # True
+
+```
+
+---
+
+
 # **Apple Decision Maker: Using If-Else Statements**
 
+We will learn how computers **make decisions** using `if`, `elif`, and `else`.
+
+---
+
 ## **1. Basic Apple Checker** 🍎
+
 ```python
 apple_color = "red"
 
@@ -10,23 +46,13 @@ else:
     print("This apple isn't red.")
 ```
 
-## **2. Price Discount Calculator** 💰
-```python
-quantity = 6
-price_per_kg = 120.5
+👉 If the apple is red → print “red apple”.
+👉 Otherwise → print “not red”.
 
-if quantity > 10:
-    discount = 0.20  # 20% discount
-elif quantity > 5:
-    discount = 0.10  # 10% discount
-else:
-    discount = 0
+---
 
-total = quantity * price_per_kg * (1 - discount)
-print(f"Final price: ₹{total:.2f}")
-```
+## **2. Health Checker** ❤️
 
-## **3. Health Checker** ❤️
 ```python
 is_healthy = True
 
@@ -36,54 +62,70 @@ else:
     print("Maybe choose a different fruit. 👎")
 ```
 
-## **4. Apple Type Classifier** 🔍
-```python
-apple_type = input("What color is the apple? ")
+👉 If healthy → say good.
+👉 Otherwise → say bad.
 
-if apple_type.lower() == "red":
+---
+
+## **3. Apple Type Classifier** 🔍
+
+```python
+apple_type = input("What color is the apple? ").lower()
+
+if apple_type == "red":
     print("Classic red apple")
-elif apple_type.lower() == "green":
-    print("Tangy green apple") 
-elif apple_type.lower() == "yellow":
+elif apple_type == "green":
+    print("Tangy green apple")
+elif apple_type == "yellow":
     print("Sweet golden apple")
 else:
     print("Unknown apple variety")
 ```
 
-## **5. Shopping Decision Maker** 🛒
+👉 Type the color → computer tells you the type.
+
+---
+
+## **4. Shopping Decision Maker (Corrected)** 🛒
+
 ```python
-budget = 200
-apple_price = 120.5
+budget = int(input("What is your budget? "))
+apple_price = int(input("What is the apple price? "))
 
 if budget >= apple_price:
-    print("You can buy this apple! 🛍️")
-    change = budget - apple_price
-    print(f"You'll get ₹{change:.2f} back")
+    print("You can buy the apple! 🛍️")
 else:
-    print("You need more money to buy this apple. 💸")
-    needed = apple_price - budget
-    print(f"You need ₹{needed:.2f} more")
+    print("You don’t have enough money. 💸")
 ```
 
-## **6. Apple Ripeness Checker** 🟢🟡🔴
+**Step-by-step thinking:**
+
+1. Ask how much money you have (`budget`).
+2. Ask the price of the apple (`apple_price`).
+3. If budget ≥ price → you can buy.
+4. Otherwise → not enough money.
+
+---
+
+## **5. Apple Ripeness Checker (Simplified)** 🟢🔴
+
 ```python
-ripeness = input("Is the apple (g)reen, (y)ellow, or (r)ed? ")
+color = input("Apple color (green / red): ")
 
-if ripeness.lower() == "g":
-    print("Not ripe yet - wait a few days! ⏳")
-elif ripeness.lower() == "y":
-    print("Almost ripe - eat soon! ⌛") 
-elif ripeness.lower() == "r":
-    print("Perfectly ripe - enjoy now! 🍽️")
+if color.lower() == "green":
+    print("Not ready yet, wait! ⏳")
+elif color.lower() == "red":
+    print("Ripe and ready to eat! 🍎")
 else:
-    print("Invalid selection - try again! ❌")
+    print("I don’t know this color. ❓")
 ```
 
-## **Key Takeaways:**
-✅ Use `if` for the first condition  
-✅ Add `elif` for additional conditions  
-✅ Finish with `else` for all other cases  
-✅ Remember colons `:` and indentation  
-✅ Test with different inputs to see all possibilities  
+**Step-by-step thinking:**
 
-Try modifying these examples with different values to see how the outputs change!
+1. Ask for apple color.
+2. If it’s green → not ready.
+3. If it’s red → ready to eat.
+4. If it’s something else → unknown.
+
+---
+

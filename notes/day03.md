@@ -1,86 +1,194 @@
-# **Control Statements in Python: Making Decisions with Code!**  
+# **Day 03 - Class Script**
 
-## **What Are Control Statements?**  
-Control statements help computers make **decisions** based on conditions. Just like in real life:  
+## Table of Contents
 
-- **If** it's raining, **then** take an umbrella. ☔  
-- **Else**, enjoy the sunshine! ☀️  
-
-In Python, we use **`if`**, **`else`**, and **`elif`** (short for "else if") to make these decisions.  
+1. [Warm-up & Recap](#warm-up--recap)
+2. [Introducing Operators](#introducing-operators)
+3. [Hands-On: Apple Operator Playground](#hands-on-apple-operator-playground)
+4. [Decision Making in Python](#decision-making-in-python)
+5. [Activity 1: Basic Apple Checker](#activity-1-basic-apple-checker)
+6. [Activity 2: Health Checker](#activity-2-health-checker)
+7. [Activity 3: Apple Type Classifier](#activity-3-apple-type-classifier)
+8. [Activity 4: Shopping Decision Maker](#activity-4-shopping-decision-maker)
+9. [Activity 5: Apple Ripeness Checker](#activity-5-apple-ripeness-checker)
+10. [Review & Reflection](#review--reflection)
+11. [Homework & Practice](#homework--practice)
+12. [Next Steps](#next-steps)
 
 ---
 
-## **Example: The Ice Cream Decision 🍦**  
-Let’s write a simple program that decides whether you can eat ice cream based on your homework status.  
+## Warm-up & Recap
 
-### **Code Example:**  
+**Highlights**
+
+* Quick recap of variables & formatted printing (from Day 2).
+* Ask students: *“What did we learn about fruits and variables last time?”*
+* Smoothly transition: *“Today, we will learn how computers compare things and make decisions using operators and if-else.”*
+
+---
+
+## Introducing Operators
+
+**Highlights**
+
+* Explain what operators are (symbols to compare values).
+* Focus on: `==`, `!=`, `>`, `<`, `>=`, `<=`.
+* Real-world analogy: *“Is the apple red? Is the price higher than my money?”*
+
+---
+
+## Hands-On: Apple Operator Playground
+
 ```python
-homework_done = True  # Change to False and see what happens!
+# Equal to (==)
+print("Is the apple red?", "red" == "red")   # True
 
-if homework_done:  
-    print("🎉 Yay! You can have ice cream! 🍦")  
-else:  
-    print("😢 Finish your homework first! 📚")  
+# Not equal (!=)
+print("Is the apple not green?", "red" != "green")   # True
+
+# Greater than (>)
+print("Is apple price greater than budget?", 60 > 50)   # True
+
+# Less than (<)
+print("Is apple price less than budget?", 40 < 50)   # True
+
+# Greater than or equal (>=)
+print("Do you have enough money?", 50 >= 50)   # True
+
+# Less than or equal (<=)
+print("Is apple weight small?", 150 <= 200)   # True
 ```
 
-### **How It Works:**  
-1. The computer checks **`if homework_done is True`**.  
-2. If **YES**, it prints the happy message.  
-3. If **NO**, it prints the sad message.  
+👉 Students should run each line and observe the output (`True` / `False`).
 
 ---
 
-## **Another Example: The Pet Checker 🐶🐱**  
-What if we have more options? Let’s use **`elif`**!  
+## Decision Making in Python
 
-### **Code Example:**  
+**Highlights**
+
+* Introduce `if`, `elif`, and `else`.
+* Explain: *“This is how Python makes choices, just like we do in real life.”*
+* Flow: Condition → If True → Action → Else → Another Action.
+
+---
+
+## Activity 1: Basic Apple Checker 🍎
+
 ```python
-pet = "dog"  # Try changing to "cat", "fish", or "dragon"!
+apple_color = "red"
 
-if pet == "dog":  
-    print("🐶 Woof! You have a dog!")  
-elif pet == "cat":  
-    print("🐱 Meow! You have a cat!")  
-elif pet == "fish":  
-    print("🐟 Blub blub! You have a fish!")  
-else:  
-    print("🤖 Hmm, I don’t know that pet!")  
+if apple_color == "red":
+    print("This is a red apple! 🍎")
+else:
+    print("This apple isn't red.")
 ```
 
-### **How It Works:**  
-1. The computer checks **each condition in order**.  
-2. If one is **True**, it runs that block and **skips the rest**.  
-3. If **none match**, it runs the **`else`** block.  
+* Ask: *“What will happen if I change `apple_color` to green?”*
 
 ---
 
-## **Key Takeaways:**  
-✅ **`if`** → Checks a condition (must be **True** to run).  
-✅ **`elif`** → Adds more conditions (like "else if").  
-✅ **`else`** → Runs if **no other condition is True**.  
+## Activity 2: Health Checker ❤️
 
-🔹 **Try It Yourself!** Change the values and see what happens!  
-
----
-
-## **Homework Challenge 🏆**  
-Write a program that:  
-1. Asks the user for their **age** (`input()`).  
-2. If age is **less than 13**, print: "You're a kid! 🧒"  
-3. If age is **13-19**, print: "You're a teenager! 🎸"  
-4. Otherwise, print: "You're an adult! 👔"  
-
-**Example Answer:**  
 ```python
-age = int(input("How old are you? "))  
+is_healthy = True
 
-if age < 13:  
-    print("You're a kid! 🧒")  
-elif age <= 19:  
-    print("You're a teenager! 🎸")  
-else:  
-    print("You're an adult! 👔")  
+if is_healthy:
+    print("This apple is good for you! 👍")
+else:
+    print("Maybe choose a different fruit. 👎")
 ```
 
+👉 Show how boolean (`True` / `False`) controls decisions.
+
 ---
 
+## Activity 3: Apple Type Classifier 🔍
+
+```python
+apple_type = input("What color is the apple? ").lower()
+
+if apple_type == "red":
+    print("Classic red apple")
+elif apple_type == "green":
+    print("Tangy green apple")
+elif apple_type == "yellow":
+    print("Sweet golden apple")
+else:
+    print("Unknown apple variety")
+```
+
+👉 Students type color, Python replies with apple type.
+
+---
+
+## Activity 4: Shopping Decision Maker 🛒
+
+```python
+budget = int(input("What is your budget? "))
+apple_price = int(input("What is the apple price? "))
+
+if budget >= apple_price:
+    print("You can buy the apple! 🛍️")
+else:
+    print("You don’t have enough money. 💸")
+```
+
+* Connect to real life: *“If I have ₹50 and the apple costs ₹60, can I buy it?”*
+
+---
+
+## Activity 5: Apple Ripeness Checker 🟢🔴
+
+```python
+color = input("Apple color (green / red): ")
+
+if color.lower() == "green":
+    print("Not ready yet, wait! ⏳")
+elif color.lower() == "red":
+    print("Ripe and ready to eat! 🍎")
+else:
+    print("I don’t know this color. ❓")
+```
+
+* Show multiple outcomes with `elif`.
+
+---
+
+## Review & Reflection
+
+**Highlights**
+
+* Ask: *“What did we learn today?”*
+* Students should summarize:
+
+  1. Operators (`==`, `!=`, `>`, `<`, `>=`, `<=`).
+  2. If-Else statements.
+  3. User input with decision making.
+* Encourage peer explanation: one student explains, others listen.
+
+---
+
+## Homework & Practice
+
+**Assignments:**
+
+1. Write a program to check if a number is even or odd using `if-else`.
+2. Create a fruit shop program:
+
+   * Ask user for budget.
+   * Ask fruit price.
+   * If enough money → print “You can buy”. Otherwise → print “Not enough money”.
+3. Make your own version of *Apple Type Classifier* with at least 3 fruit colors.
+
+---
+
+## Next Steps
+
+**Plan for Next Class (Day 04):**
+
+* Deeper dive into **elif chains** with more conditions.
+* Explore **nested if statements** (if inside if).
+* More real-world decision-making examples (e.g., grading system, ticket prices).
+
+---
