@@ -19,57 +19,64 @@
 
 ## Warm-up & Recap
 
-**Highlights**
+👩‍🏫 **Teacher Script:**
 
-* Quick recap of variables & formatted printing (from Day 2).
-* Ask students: *“What did we learn about fruits and variables last time?”*
-* Smoothly transition: *“Today, we will learn how computers compare things and make decisions using operators and if-else.”*
+* “Yesterday we learned about **variables** and **formatted printing**. Can someone remind me how we stored the apple’s color in a variable?”
+* (Wait for student responses)
+* Transition: “Great! Today, let’s go one step ahead. Computers don’t just store values; they can **compare** them and make **decisions**. Just like us, computers also ask: *Is this red? Is this enough money?*”
 
 ---
 
 ## Introducing Operators
 
-**Highlights**
+👩‍🏫 **Teacher Script:**
 
-* Explain what operators are (symbols to compare values).
-* Focus on: `==`, `!=`, `>`, `<`, `>=`, `<=`.
-* Real-world analogy: *“Is the apple red? Is the price higher than my money?”*
+* “Operators are symbols that help us compare values.”
+* Write on board: `==, !=, >, <, >=, <=`
+* Real-world analogy: “Suppose an apple costs ₹50. If I have ₹60, can I buy it? → Yes, because ₹60 >= ₹50.”
 
 ---
 
 ## Hands-On: Apple Operator Playground
 
+👩‍🏫 **Teacher Script:**
+“Let’s try some quick tests in Python. Observe carefully: you will only get `True` or `False`.”
+
 ```python
 # Equal to (==)
-print("Is the apple red?", "red" == "red")   # True
+print("Is the apple red?", "red" == "red")
 
 # Not equal (!=)
-print("Is the apple not green?", "red" != "green")   # True
+print("Is the apple not green?", "red" != "green")
 
 # Greater than (>)
-print("Is apple price greater than budget?", 60 > 50)   # True
+print("Is apple price greater than budget?", 60 > 50)
 
 # Less than (<)
-print("Is apple price less than budget?", 40 < 50)   # True
+print("Is apple price less than budget?", 40 < 50)
 
 # Greater than or equal (>=)
-print("Do you have enough money?", 50 >= 50)   # True
+print("Do you have enough money?", 50 >= 50)
 
 # Less than or equal (<=)
-print("Is apple weight small?", 150 <= 200)   # True
+print("Is apple weight small?", 150 <= 200)
 ```
 
-👉 Students should run each line and observe the output (`True` / `False`).
+👉 **Student Task:** Run each line and read aloud whether it is `True` or `False`.
+👉 **Discussion Prompt:** “Why do you think Python returned `True` for this one? Can someone explain?”
 
 ---
 
 ## Decision Making in Python
 
-**Highlights**
+👩‍🏫 **Teacher Script:**
 
-* Introduce `if`, `elif`, and `else`.
-* Explain: *“This is how Python makes choices, just like we do in real life.”*
-* Flow: Condition → If True → Action → Else → Another Action.
+* “Now, let’s talk about **decision making**. Imagine you are at a fruit shop. If you see a red apple, you pick it. Otherwise, you don’t. That’s a decision.”
+* “Python uses `if`, `elif`, and `else` to make decisions.”
+* **Explain with flow:** *Condition → If True → Action → Else → Another Action.*
+* “If there are multiple choices, Python checks one by one using `elif`. If there are no choices left, it does nothing.”
+
+👉 **Interactive Question:** “In real life, where do we make such choices?” (Possible answers: choosing clothes, deciding lunch, exams pass/fail, etc.)
 
 ---
 
@@ -84,7 +91,8 @@ else:
     print("This apple isn't red.")
 ```
 
-* Ask: *“What will happen if I change `apple_color` to green?”*
+👉 **Ask Students:** “What happens if I change `apple_color` to `green`?”
+👉 Let one student try it out.
 
 ---
 
@@ -99,7 +107,7 @@ else:
     print("Maybe choose a different fruit. 👎")
 ```
 
-👉 Show how boolean (`True` / `False`) controls decisions.
+👉 **Discussion Prompt:** “What if `is_healthy = False`? Can someone predict the output before running?”
 
 ---
 
@@ -118,7 +126,8 @@ else:
     print("Unknown apple variety")
 ```
 
-👉 Students type color, Python replies with apple type.
+👉 **Student Interaction:** Each student types a color and sees the classification.
+👉 **Challenge Question:** “What happens if I type `BLUE` in uppercase?”
 
 ---
 
@@ -134,7 +143,8 @@ else:
     print("You don’t have enough money. 💸")
 ```
 
-* Connect to real life: *“If I have ₹50 and the apple costs ₹60, can I buy it?”*
+👉 **Teacher Prompt:** “If I have ₹50 and the apple costs ₹60, can I buy it? Let’s test.”
+👉 **Follow-up:** “What if both are equal? (budget = 50, apple\_price = 50)”
 
 ---
 
@@ -151,44 +161,27 @@ else:
     print("I don’t know this color. ❓")
 ```
 
-* Show multiple outcomes with `elif`.
+👉 **Interactive Question:** “What if someone types ‘yellow’? Why does the program give ❓?”
+👉 **Link Back:** “This is where multiple `elif` conditions are useful.”
 
 ---
 
 ## Review & Reflection
 
-**Highlights**
+👩‍🏫 **Teacher Script:**
+“Let’s summarize. Who can tell me…”
 
-* Ask: *“What did we learn today?”*
-* Students should summarize:
+1. “Which operators we learned today?”
+2. “How do we use `if-else` in real life?”
+3. “What happens if none of the conditions are true?”
 
-  1. Operators (`==`, `!=`, `>`, `<`, `>=`, `<=`).
-  2. If-Else statements.
-  3. User input with decision making.
-* Encourage peer explanation: one student explains, others listen.
-
----
-
-## Homework & Practice
-
-**Assignments:**
-
-1. Write a program to check if a number is even or odd using `if-else`.
-2. Create a fruit shop program:
-
-   * Ask user for budget.
-   * Ask fruit price.
-   * If enough money → print “You can buy”. Otherwise → print “Not enough money”.
-3. Make your own version of *Apple Type Classifier* with at least 3 fruit colors.
+👉 Encourage peer explanation: One student answers, another student adds to it.
 
 ---
 
 ## Next Steps
 
-**Plan for Next Class (Day 04):**
-
-* Deeper dive into **elif chains** with more conditions.
-* Explore **nested if statements** (if inside if).
-* More real-world decision-making examples (e.g., grading system, ticket prices).
+👩‍🏫 **Teacher Script:**
+“Tomorrow (Day 04), we’ll go deeper into **elif chains** and learn about **nested if statements**. We’ll also create real-world examples like grading system and ticket price checker.”
 
 ---
