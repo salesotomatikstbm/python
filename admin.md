@@ -13,7 +13,7 @@
 #### [Class Work](class_work/day03.html)
 #### [Home Assignment](home_assignment/day03.html)
 
-### Day 03 : Control Statements (If-Else)
+### Day 04 : Control Statements (If-Else)
 #### [Script](notes/day04.html)
 #### [Class Work](class_work/day04.html)
 #### [Home Assignment](home_assignment/day04.html)
