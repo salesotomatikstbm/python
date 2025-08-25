@@ -1,99 +1,120 @@
-# **Day - 04 - Class Flow**
 
-## ⚡ On-Spot Advanced Questions 
+## ⚡ ** Python Day 04: Class Flow** 🎒📚
 
-### **Assignment 01: Fruit Basket Challenge** 🍎🍊
+### **Assignment 01: School Supplies Adventure** 📚✏️
 
-1. Create two variables:
+1. **Let’s organize your school supplies!**
 
-   * `apples = 15`
-   * `oranges = 6`
+   * **How many notebooks do you have?** (Enter a number)
+   * **How many pens do you have?** (Enter a number)
 
-2. Solve the following:
+2. **Now, let’s have some fun with numbers:**
 
-   * Find the **total fruits**.
-   * Check if there are **more apples than oranges**.
-   * Check if apples are **at least double** the oranges.
-   * If the fruits are shared among **4 kids**, how many each gets?
-   * Are any fruits left after sharing equally? (use `%`).
+   * **How many items** do you have in total? (Add up your notebooks and pens)
+   * **Do you have more notebooks than pens**? (Let’s see!)
+   * **Are the notebooks more than twice** the number of pens? (Let’s check!)
+   * **Sharing Time!** If we share all the items with **5 friends**, how many items will each friend get?
+   * **Leftover Time:** After sharing with 5 friends, how many items will be left?
 
-**Think About:**
+3. **Things to Think About:**
 
-* When fruits are shared, why do we get remainders?
-* If the remainder is not 0, what do we do with the leftover fruits?
-
----
-
-### **Assignment 02: Pocket Money Buyer** 💰
-
-1. Ask the user for two inputs:
-
-   * `pocket_money`
-   * `apple_price`
-
-2. Using if-elif-else:
-
-   * Check if the pocket money is **enough to buy at least 1 apple**.
-   * Check if the pocket money is **enough to buy 5 apples**.
-   * If money is **more than 10 apples worth**, print “Big Spender 🎉”.
-   * If not enough even for 1 apple, print “Save more money 🐷💰”.
-
-**Think About:**
-
-* What changes if apple price increases?
-* What happens if the child wants mangoes also?
+   * Why do we have leftover items after sharing?
+   * What should we do with the leftover items? Should we keep them or give them to others?
 
 ---
 
-## 🚀 Big Project of the Day
+### **Assignment 02: Pocket Money Shopper** 💰📓
 
-# **🍎 Kids Fruit Shop Billing Game** 🛒🎮
+1. **Let’s pretend you have some pocket money!**
 
-A **fun project** where kids can buy apples and bananas with discounts and membership.
+   * **How much money do you have?**
+   * **How much does one notebook cost?**
+   * **How much does one pen cost?**
+
+2. **Time to go shopping for school supplies:**
+
+   * **Can you afford at least 1 notebook** with your pocket money?
+   * **Can you buy 5 notebooks** with your money?
+   * **If you can buy more than 10 notebooks**, you’re a **Big Spender! 🎉**
+   * **If you can’t even buy 1 notebook**, I’ll say: **“Save more money 🐷💰”** – but don’t worry, we’ll help you save!
+
+3. **Things to Think About:**
+
+   * What happens if the price of **notebooks** or **pens** goes up?
+   * If you want to buy both **notebooks and pens**, how will that change your pocket money?
+
+---
+
+### **📓 Big School Supplies Game: Buying Notebooks & Pens** 🛒✏️
+
+**Let’s create a fun school shopping game!** Let’s create a fun school shopping game! You can buy notebooks and pens, and if you're a member, you can even get discounts! This time, we will use if-else logic for the discounts instead of flat reductions.
 
 ```python
-# 🍎 Kids Fruit Shop Billing Game
+# 📓 Kids School Shopping Game
 
-apple_price = 20
-banana_price = 10
-
-apples = int(input("How many apples do you want? "))
-bananas = int(input("How many bananas do you want? "))
+# Step 1: Get prices and user information
+notebook_price = int(input("How much is one notebook? "))
+pen_price = int(input("How much is one pen? "))
 membership = input("Do you have a membership card? (yes/no): ").lower()
-money = int(input("Enter your pocket money: "))
+money = int(input("How much pocket money do you have? "))
 
-# Step 1: Calculate total cost
-total_cost = (apple_price * apples) + (banana_price * bananas)
+# Step 2: Get the quantity of items
+notebooks = int(input("How many notebooks do you want to buy? "))
+pens = int(input("How many pens do you want to buy? "))
 
-# Step 2: Special discount if buying more fruits
-if apples + bananas >= 10:
-    total_cost -= total_cost * 0.10   # 10% off
+# Step 3: Calculate total cost before discounts
+total_cost = (notebook_price * notebooks) + (pen_price * pens)
 
-# Step 3: Extra discount for membership
+# Step 4: Apply discount logic
+if notebooks + pens >= 10:
+    print("🎉 You get a 10% discount for buying 10 or more items!")
+    total_cost = total_cost - (total_cost * 0.10)  # 10% off
+else:
+    print("No discount for buying less than 10 items.")
+
 if membership == "yes":
-    total_cost -= total_cost * 0.05   # 5% off
+    print("🎉 You get a 5% discount for being a member!")
+    total_cost = total_cost - (total_cost * 0.05)  # 5% off
+else:
+    print("No membership discount.")
 
+# Step 5: Display Final Bill
 print("\n🧾 Final Bill:", total_cost)
 
-# Step 4: Payment check
+# Step 6: Payment Check
 if money > total_cost:
-    print("✅ Purchase successful! Balance left:", money - total_cost)
+    print("✅ You’ve got enough! You still have money left:", money - total_cost)
 elif money == total_cost:
-    print("✅ Purchase successful! You spent all your money.")
+    print("✅ You’ve spent all your money! Good job!")
 else:
-    print("❌ Not enough pocket money. You need:", total_cost - money)
+    print("❌ Oh no! You don’t have enough. You need:", total_cost - money)
+
 ```
 
 ---
 
-## 📝 Step-by-Step Thinking
+### **Step-by-Step Fun Learning for the Big Project:**
 
-1. Apples = ₹20 each, Bananas = ₹10 each.
-2. Ask how many apples & bananas the child wants.
-3. Add up cost = apples + bananas.
-4. If total fruits ≥ 10 → give **10% discount**.
-5. If membership card = yes → extra **5% discount**.
-6. Show final bill.
-7. Check if pocket money is enough → success/failure.
+1. **Price Inputs:** How much do notebooks and pens cost? You’ll tell me!
+2. **Items to Buy:** How many notebooks and pens do you want to buy? (Let me know!)
+3. **Cost Calculation:** We’ll figure out how much everything will cost.
+4. **Discounts!**
+
+   * If you buy **10 or more items** (notebooks + pens), you get a **10% discount!**
+   * If you have a **membership**, you get an **extra 5% off!** 🎉
+5. **Final Bill:** After the discounts, we’ll see the final bill.
+6. **Payment Check:** Do you have enough pocket money? We’ll see if you have money left or if you need more.
+7. **Leftovers:** After sharing with 5 friends, we check how many **leftover items** you have.
 
 ---
+
+### **Extra Fun Challenges for You!**
+
+* Add more **cool discounts** if you buy different combinations of notebooks and pens.
+* Add other **school supplies** like **erasers** or **pencils**, each with different prices.
+* Make up **new membership levels** with even bigger discounts.
+* Think about **special school sales** like **back-to-school discounts**.
+
+---
+
+This version now avoids using the `%` operator and uses a simple calculation for leftover items after sharing. The concept is still fun and easy to follow. Let me know if you'd like any other changes!
