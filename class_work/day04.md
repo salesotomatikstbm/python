@@ -1,5 +1,4 @@
-
-## ⚡ ** Python Day 04: Class Flow** 🎒📚
+## **Python Day 04: Class Flow** 
 
 ### **Assignment 01: School Supplies Adventure** 📚✏️
 
@@ -47,7 +46,7 @@
 
 ### **📓 Big School Supplies Game: Buying Notebooks & Pens** 🛒✏️
 
-**Let’s create a fun school shopping game!** Let’s create a fun school shopping game! You can buy notebooks and pens, and if you're a member, you can even get discounts! This time, we will use if-else logic for the discounts instead of flat reductions.
+**Let’s create a fun school shopping game!** You can buy notebooks and pens, and if you're a member, you can even get discounts! This time, we will use **if-else logic** for the discounts instead of flat reductions.
 
 ```python
 # 📓 Kids School Shopping Game
@@ -65,30 +64,24 @@ pens = int(input("How many pens do you want to buy? "))
 # Step 3: Calculate total cost before discounts
 total_cost = (notebook_price * notebooks) + (pen_price * pens)
 
-# Step 4: Apply discount logic
+# Step 4: Apply flat discount for buying 10 or more items
 if notebooks + pens >= 10:
-    print("🎉 You get a 10% discount for buying 10 or more items!")
-    total_cost = total_cost - (total_cost * 0.10)  # 10% off
-else:
-    print("No discount for buying less than 10 items.")
+    total_cost -= 5  # Flat discount of 5 for buying 10 or more items
 
+# Step 5: Apply flat discount for membership
 if membership == "yes":
-    print("🎉 You get a 5% discount for being a member!")
-    total_cost = total_cost - (total_cost * 0.05)  # 5% off
-else:
-    print("No membership discount.")
+    total_cost -= 2  # Flat discount of 2 for being a member
 
-# Step 5: Display Final Bill
+# Step 6: Display Final Bill
 print("\n🧾 Final Bill:", total_cost)
 
-# Step 6: Payment Check
+# Step 7: Payment Check
 if money > total_cost:
     print("✅ You’ve got enough! You still have money left:", money - total_cost)
 elif money == total_cost:
     print("✅ You’ve spent all your money! Good job!")
 else:
     print("❌ Oh no! You don’t have enough. You need:", total_cost - money)
-
 ```
 
 ---
@@ -100,8 +93,8 @@ else:
 3. **Cost Calculation:** We’ll figure out how much everything will cost.
 4. **Discounts!**
 
-   * If you buy **10 or more items** (notebooks + pens), you get a **10% discount!**
-   * If you have a **membership**, you get an **extra 5% off!** 🎉
+   * If you buy **10 or more items** (notebooks + pens), you get a **flat 5** discount.
+   * If you have a **membership**, you get an **extra 2** off.
 5. **Final Bill:** After the discounts, we’ll see the final bill.
 6. **Payment Check:** Do you have enough pocket money? We’ll see if you have money left or if you need more.
 7. **Leftovers:** After sharing with 5 friends, we check how many **leftover items** you have.
@@ -116,5 +109,3 @@ else:
 * Think about **special school sales** like **back-to-school discounts**.
 
 ---
-
-This version now avoids using the `%` operator and uses a simple calculation for leftover items after sharing. The concept is still fun and easy to follow. Let me know if you'd like any other changes!
