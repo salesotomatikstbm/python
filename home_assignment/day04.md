@@ -60,7 +60,7 @@ To calculate the total prasadam (modaks and bananas), check if the quantity is s
 
 ---
 
-### **Python Code Example:**
+<!-- ### **Python Code Example:**
 
 ```python
 # Vinayagar Chaturthi Prasadam Counter
@@ -88,7 +88,7 @@ if total_prasadam > 50:
     print("Wow! You have a grand prasadam feast for Vinayagar Chaturthi!")
 ```
 
----
+--- -->
 
 ### **Example Run:**
 
