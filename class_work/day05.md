@@ -19,13 +19,6 @@ default:
 }
 ```
 
-### **How It Works:**
-
-1. **Expression Evaluation**: The expression after the `switch` keyword is evaluated.
-2. **Case Matching**: The value of the switch expression is compared with each case.
-3. **Execution**: If a case matches, the corresponding code block runs. If no case matches, the `default` block (if present) will execute.
-4. **No Need for `break`**: In Go, each `case` automatically ends the switch when matched. You don't need to use a `break` statement like in other languages such as C or Java.
-
 ---
 
 ## **1. Example: Month Name from Month Number**
