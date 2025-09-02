@@ -1,8 +1,4 @@
----
-
-# **Day - 05 - Class Flow**
-
----
+# **Day - 05 - Class Flow **
 
 ## **1. Example: Month Name from Month Number**
 
@@ -10,7 +6,8 @@
 package main
 
 func main() {
-    month := 8
+    var month int
+    month = 8
 
     switch month {
     case 1:
@@ -57,7 +54,8 @@ August
 package main
 
 func main() {
-    score := 85
+    var score int
+    score = 85
 
     switch {
     case score >= 90:
@@ -88,7 +86,8 @@ Grade: B
 package main
 
 func main() {
-    day := "Wednesday"
+    var day string
+    day = "Wednesday"
 
     switch day {
     case "Monday":
@@ -119,7 +118,8 @@ Mid-week! Keep going!
 package main
 
 func main() {
-    number := 42
+    var number int
+    number = 42
 
     switch {
     case number%2 == 0:
@@ -144,7 +144,8 @@ The number is even.
 package main
 
 func main() {
-    choice := "coffee"
+    var choice string
+    choice = "coffee"
 
     switch choice {
     case "coffee":
@@ -173,7 +174,8 @@ Preparing your coffee...
 package main
 
 func main() {
-    isRaining := true
+    var isRaining bool
+    isRaining = true
 
     switch isRaining {
     case true:
@@ -191,3 +193,5 @@ Don't forget your umbrella!
 ```
 
 ---
+
+
