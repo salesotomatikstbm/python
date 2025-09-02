@@ -4,59 +4,41 @@
 
 ---
 
-## **Single-Case Switch Syntax**
-
-```go
-switch expression {
-case x:
-    // code block
-case y:
-    // code block
-case z:
-    // code block
-default:
-    // code block
-}
-```
-
----
-
 ## **1. Example: Month Name from Month Number**
 
 ```go
 package main
-import "fmt"
 
 func main() {
     month := 8
 
     switch month {
     case 1:
-        fmt.Println("January")
+        print("January")
     case 2:
-        fmt.Println("February")
+        print("February")
     case 3:
-        fmt.Println("March")
+        print("March")
     case 4:
-        fmt.Println("April")
+        print("April")
     case 5:
-        fmt.Println("May")
+        print("May")
     case 6:
-        fmt.Println("June")
+        print("June")
     case 7:
-        fmt.Println("July")
+        print("July")
     case 8:
-        fmt.Println("August")
+        print("August")
     case 9:
-        fmt.Println("September")
+        print("September")
     case 10:
-        fmt.Println("October")
+        print("October")
     case 11:
-        fmt.Println("November")
+        print("November")
     case 12:
-        fmt.Println("December")
+        print("December")
     default:
-        fmt.Println("Invalid month number")
+        print("Invalid month number")
     }
 }
 ```
@@ -73,22 +55,21 @@ August
 
 ```go
 package main
-import "fmt"
 
 func main() {
     score := 85
 
     switch {
     case score >= 90:
-        fmt.Println("Grade: A")
+        print("Grade: A")
     case score >= 80:
-        fmt.Println("Grade: B")
+        print("Grade: B")
     case score >= 70:
-        fmt.Println("Grade: C")
+        print("Grade: C")
     case score >= 60:
-        fmt.Println("Grade: D")
+        print("Grade: D")
     default:
-        fmt.Println("Grade: F")
+        print("Grade: F")
     }
 }
 ```
@@ -105,22 +86,21 @@ Grade: B
 
 ```go
 package main
-import "fmt"
 
 func main() {
     day := "Wednesday"
 
     switch day {
     case "Monday":
-        fmt.Println("Start of the work week!")
+        print("Start of the work week!")
     case "Wednesday":
-        fmt.Println("Mid-week! Keep going!")
+        print("Mid-week! Keep going!")
     case "Friday":
-        fmt.Println("Almost the weekend!")
+        print("Almost the weekend!")
     case "Saturday", "Sunday":
-        fmt.Println("Weekend! Time to relax!")
+        print("Weekend! Time to relax!")
     default:
-        fmt.Println("Keep working hard!")
+        print("Keep working hard!")
     }
 }
 ```
@@ -137,16 +117,15 @@ Mid-week! Keep going!
 
 ```go
 package main
-import "fmt"
 
 func main() {
     number := 42
 
     switch {
     case number%2 == 0:
-        fmt.Println("The number is even.")
+        print("The number is even.")
     case number%2 != 0:
-        fmt.Println("The number is odd.")
+        print("The number is odd.")
     }
 }
 ```
@@ -163,20 +142,19 @@ The number is even.
 
 ```go
 package main
-import "fmt"
 
 func main() {
     choice := "coffee"
 
     switch choice {
     case "coffee":
-        fmt.Println("Preparing your coffee...")
+        print("Preparing your coffee...")
     case "tea":
-        fmt.Println("Preparing your tea...")
+        print("Preparing your tea...")
     case "juice":
-        fmt.Println("Preparing your juice...")
+        print("Preparing your juice...")
     default:
-        fmt.Println("Invalid choice! Please select a valid drink.")
+        print("Invalid choice! Please select a valid drink.")
     }
 }
 ```
@@ -193,16 +171,15 @@ Preparing your coffee...
 
 ```go
 package main
-import "fmt"
 
 func main() {
     isRaining := true
 
     switch isRaining {
     case true:
-        fmt.Println("Don't forget your umbrella!")
+        print("Don't forget your umbrella!")
     case false:
-        fmt.Println("Enjoy the sunshine!")
+        print("Enjoy the sunshine!")
     }
 }
 ```
