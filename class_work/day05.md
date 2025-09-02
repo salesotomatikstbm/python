@@ -6,8 +6,6 @@
 
 ## **Single-Case Switch Syntax**
 
-The `switch` statement in Go helps to select one of many code blocks to execute based on a given expression. It's an efficient way to handle multiple conditions without using numerous `if-else` statements. Here's the syntax for a single-case switch:
-
 ```go
 switch expression {
 case x:
