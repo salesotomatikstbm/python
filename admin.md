@@ -17,3 +17,8 @@
 #### [Script](notes/day04.html)
 #### [Class Work](class_work/day04.html)
 #### [Home Assignment](home_assignment/day04.html)
+
+### Day 05 : Control Statements (Switch-Case)
+#### [Script](notes/day05.html)
+#### [Class Work](class_work/day05.html)
+#### [Home Assignment](home_assignment/day05.html)
