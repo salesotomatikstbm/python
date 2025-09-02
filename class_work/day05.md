@@ -4,22 +4,6 @@
 
 ---
 
-Certainly! Here's the shortened comparison table between **if-else** and **switch-case**:
-
-| **Aspect**      | **if-else**              | **switch-case**             |
-| --------------- | ------------------------ | --------------------------- |
-| **Expression**  | Evaluated per condition  | Evaluated once              |
-| **Conditions**  | Multiple `if` statements | Grouped in cases            |
-| **Default**     | Requires `else`          | `default` is optional       |
-| **Code Blocks** | Separate for each `if`   | Case blocks without `break` |
-| **Performance** | Slower for many checks   | More efficient              |
-
-This simplified table highlights the key differences between **if-else** and **switch-case** in Go.
-
----
-
-# **The Switch Statement in Go**
-
 ## **Single-Case Switch Syntax**
 
 The `switch` statement in Go helps to select one of many code blocks to execute based on a given expression. It's an efficient way to handle multiple conditions without using numerous `if-else` statements. Here's the syntax for a single-case switch:
