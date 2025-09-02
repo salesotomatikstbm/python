@@ -1,39 +1,31 @@
 ---
-
 # **Day - 03 - Home Assignment: Switch-Case Logic Practice** 
-
+---
 ---
 
-## **Assignment 01: Beverage Temperature Classifier (Switch-Case)** 
+## **Assignment 01: Fruit Size Classifier (Switch-Case)** 
 
 ### **Objective:**
 
-Learn how to classify beverages based on their temperature using the **switch-case** statement.
+Learn to classify fruits based on their size using the **switch-case** statement.
 
 ### **Steps:**
 
-1. **Ask the User for Beverage Temperature Input**:
+1. **Ask the User for the Fruit Name**:
 
-   * Prompt the user to input the temperature of their beverage (in Celsius).
+   * Prompt the user to input the name of a fruit (e.g., Apple, Orange, Grape, etc.).
 
-2. **Classify the Beverage Based on Temperature**:
+2. **Classify the Fruit Size Using Switch-Case**:
 
-   * If the temperature is **below 5°C**, print `"Your beverage is ice cold!"`.
-   * If the temperature is between **5°C and 15°C**, print `"Your beverage is cool!"`.
-   * If the temperature is between **15°C and 30°C**, print `"Your beverage is at room temperature."`.
-   * If the temperature is **above 30°C**, print `"Your beverage is hot! Be careful."`.
+   * If the fruit is **Apple** or **Orange**, print `"This is a medium-sized fruit."`.
+   * If the fruit is **Watermelon**, print `"This is a large-sized fruit."`.
+   * If the fruit is **Grapes**, print `"This is a small-sized fruit."`.
+   * For any other fruit, print `"Unknown fruit size."`.
 
 ### **Hints:**
 
-* Use **`switch`** to match the temperature ranges and classify the beverage accordingly.
-* Use **`default`** for unexpected or unclassified temperatures.
-
-### **Task Concept:**
-
-* **Switch-case** is used to categorize the temperature of beverages and print appropriate messages.
-* This task helps practice decision-making based on temperature ranges using the **switch-case** statement.
-
----
+* Use **`switch`** to match the fruit name and classify the fruit size accordingly.
+* Use **`default`** to handle unknown fruits.
 
 ## **Assignment 02: Day of the Week Activity Planner (Switch-Case)** 
 
