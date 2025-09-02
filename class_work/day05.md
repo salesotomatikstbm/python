@@ -1,4 +1,7 @@
-# **Day - 05 - Class Flow **
+---
+
+# **Day - 05 - Class Flow**
+
 ---
 
 Certainly! Here's the shortened comparison table between **if-else** and **switch-case**:
@@ -12,13 +15,6 @@ Certainly! Here's the shortened comparison table between **if-else** and **switc
 | **Performance** | Slower for many checks   | More efficient              |
 
 This simplified table highlights the key differences between **if-else** and **switch-case** in Go.
-
-
-### **Explanation of `package main` and `import "fmt"`:**
-
-* **`package main`**: In Go, every program must declare a **package**. The `main` package is special because it defines an executable program. A program in Go must have a `main` function, and it must reside inside the `main` package to be executed. Essentially, the `main` package is where the entry point of the program resides.
-
-* **`import "fmt"`**: The `fmt` package is a standard Go library used for formatted I/O operations, such as printing to the console or reading input. `fmt.Println()` is commonly used to print output to the screen. Without importing `fmt`, you wouldn't be able to use its functions, such as `fmt.Println()`.
 
 ---
 
@@ -51,8 +47,6 @@ default:
 ---
 
 ## **1. Example: Month Name from Month Number**
-
-This example uses a switch statement to print the name of the month based on its number (1-12).
 
 ```go
 package main
@@ -102,8 +96,6 @@ August
 
 ## **2. Example: Grading System**
 
-This example checks the score and assigns a grade based on the score using the switch-case logic.
-
 ```go
 package main
 import "fmt"
@@ -132,15 +124,9 @@ func main() {
 Grade: B
 ```
 
-### **Explanation**:
-
-* The expression is left empty, and we simply evaluate the conditions inside the `case` blocks. This allows us to group conditions and handle ranges, such as checking if the score is greater than or equal to certain thresholds.
-
 ---
 
 ## **3. Example: Day of the Week Message**
-
-This example uses a switch to print a specific message depending on the day of the week.
 
 ```go
 package main
@@ -170,16 +156,9 @@ func main() {
 Mid-week! Keep going!
 ```
 
-### **Explanation**:
-
-* The switch checks the `day` variable, and when it matches `"Wednesday"`, the corresponding message is printed.
-* The switch also includes multiple cases for `Saturday` and `Sunday` using a comma, which works like a logical OR.
-
 ---
 
 ## **4. Example: Check Even or Odd Number**
-
-This example uses a switch statement to determine if a number is even or odd.
 
 ```go
 package main
@@ -203,16 +182,9 @@ func main() {
 The number is even.
 ```
 
-### **Explanation**:
-
-* The expression in the `switch` is empty, and the `case` checks if the number is divisible by 2 (i.e., even or odd).
-* This structure is often used when you want to evaluate conditions directly inside the `case` statements.
-
 ---
 
 ## **5. Example: Switch with Strings**
-
-This example demonstrates how to use strings with a switch-case statement to perform different actions based on a user's input.
 
 ```go
 package main
@@ -240,16 +212,9 @@ func main() {
 Preparing your coffee...
 ```
 
-### **Explanation**:
-
-* Here, the `switch` is used to choose between different types of drinks based on the string `choice`.
-* If the user enters a drink that's not listed, the `default` case will be triggered.
-
 ---
 
 ## **6. Example: Using Switch with Boolean**
-
-Here’s an example where we use a switch to handle a boolean value and perform different actions.
 
 ```go
 package main
