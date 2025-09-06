@@ -1,15 +1,55 @@
 # **Day - 05 - Class Flow **
 
-## **1. Example: Month Name from Month Number**
+### 1. Calculator
 
-```go
-package main
+```python
+a = 10
+b = 5
+operation = input("Choose operation (+, -, *, /): ")
 
-func main() {
-    var month int
-    month = 8
+match operation:
+    case "+":
+        print("Result:", a + b)
+    case "-":
+        print("Result:", a - b)
+    case "*":
+        print("Result:", a * b)
+    case "/":
+        print("Result:", a / b)
+    case _:
+        print("Invalid operation")
+```
 
-    switch month {
+---
+
+### 2. Grade Evaluator
+
+```python
+grade = input("Enter grade (A, B, C, D, F): ").upper()
+
+match grade:
+    case "A":
+        print("Excellent")
+    case "B":
+        print("Good")
+    case "C":
+        print("Average")
+    case "D":
+        print("Poor")
+    case "F":
+        print("Fail")
+    case _:
+        print("Invalid grade")
+```
+
+---
+
+### 3. Month Name Finder
+
+```python
+month = int(input("Enter month number (1-12): "))
+
+match month:
     case 1:
         print("January")
     case 2:
@@ -34,164 +74,46 @@ func main() {
         print("November")
     case 12:
         print("December")
-    default:
+    case _:
         print("Invalid month number")
-    }
-}
-```
-
-**Output:**
-
-```
-August
 ```
 
 ---
 
-## **2. Example: Grading System**
+### 4. Simple Login Role Checker
 
-```go
-package main
+```python
+role = input("Enter role (admin, user, guest): ").lower()
 
-func main() {
-    var score int
-    score = 85
-
-    switch {
-    case score >= 90:
-        print("Grade: A")
-    case score >= 80:
-        print("Grade: B")
-    case score >= 70:
-        print("Grade: C")
-    case score >= 60:
-        print("Grade: D")
-    default:
-        print("Grade: F")
-    }
-}
-```
-
-**Output:**
-
-```
-Grade: B
+match role:
+    case "admin":
+        print("You have full access")
+    case "user":
+        print("You have limited access")
+    case "guest":
+        print("You have view-only access")
+    case _:
+        print("Unknown role")
 ```
 
 ---
 
-## **3. Example: Day of the Week Message**
+### 5. Weather Response
 
-```go
-package main
+```python
+weather = input("Enter weather (sunny, rainy, cloudy, snowy): ").lower()
 
-func main() {
-    var day string
-    day = "Wednesday"
-
-    switch day {
-    case "Monday":
-        print("Start of the work week!")
-    case "Wednesday":
-        print("Mid-week! Keep going!")
-    case "Friday":
-        print("Almost the weekend!")
-    case "Saturday", "Sunday":
-        print("Weekend! Time to relax!")
-    default:
-        print("Keep working hard!")
-    }
-}
-```
-
-**Output:**
-
-```
-Mid-week! Keep going!
+match weather:
+    case "sunny":
+        print("Wear sunglasses")
+    case "rainy":
+        print("Take an umbrella")
+    case "cloudy":
+        print("It might rain later")
+    case "snowy":
+        print("Wear warm clothes")
+    case _:
+        print("Unknown weather condition")
 ```
 
 ---
-
-## **4. Example: Check Even or Odd Number**
-
-```go
-package main
-
-func main() {
-    var number int
-    number = 42
-
-    switch {
-    case number%2 == 0:
-        print("The number is even.")
-    case number%2 != 0:
-        print("The number is odd.")
-    }
-}
-```
-
-**Output:**
-
-```
-The number is even.
-```
-
----
-
-## **5. Example: Switch with Strings**
-
-```go
-package main
-
-func main() {
-    var choice string
-    choice = "coffee"
-
-    switch choice {
-    case "coffee":
-        print("Preparing your coffee...")
-    case "tea":
-        print("Preparing your tea...")
-    case "juice":
-        print("Preparing your juice...")
-    default:
-        print("Invalid choice! Please select a valid drink.")
-    }
-}
-```
-
-**Output:**
-
-```
-Preparing your coffee...
-```
-
----
-
-## **6. Example: Using Switch with Boolean**
-
-```go
-package main
-
-func main() {
-    var isRaining bool
-    isRaining = true
-
-    switch isRaining {
-    case true:
-        print("Don't forget your umbrella!")
-    case false:
-        print("Enjoy the sunshine!")
-    }
-}
-```
-
-**Output:**
-
-```
-Don't forget your umbrella!
-```
-
----
-
-
