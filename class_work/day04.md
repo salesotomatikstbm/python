@@ -41,7 +41,7 @@ Print a short message like:
 
 ---
 
-## **Question 02: Pocket Money Shopper **
+## **Question 02: Pocket Money Shopper**
 
 ### **Objective:**
 
