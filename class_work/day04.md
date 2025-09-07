@@ -82,7 +82,7 @@ Print a short message like:
 
 ---
 
-## **Question 03: Big School Supplies Game **
+## **Question 03: Big School Supplies Game**
 
 ### **Objective:**
 
