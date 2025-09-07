@@ -1,8 +1,8 @@
-# **Day - 04 - Class Flow **
+# **Day - 04 - Class Flow**
 
 ---
 
-## **Question 01: School Supplies Adventure **
+## **Question 01: School Supplies Adventure**
 
 ### **Objective:**
 
