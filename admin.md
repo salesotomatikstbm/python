@@ -24,7 +24,7 @@
 #### [Home Assignment](home_assignment/day05.html)
 
 
-### Day 05 : Lists, Tuples, Sets, and Dictionaries
+### Day 06 : Lists, Tuples, Sets, and Dictionaries
 #### [Script](notes/day06.html)
 #### [Class Work](class_work/day06.html)
 #### [Home Assignment](home_assignment/day06.html)
