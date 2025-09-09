@@ -1,8 +1,8 @@
-# **Day - 04 - Class Flow **
+# **Day - 04 - Class Flow**
 
 ---
 
-## **Question 01: School Supplies Adventure **
+## **Question 01: School Supplies Adventure**
 
 ### **Objective:**
 
@@ -41,7 +41,7 @@ Print a short message like:
 
 ---
 
-## **Question 02: Pocket Money Shopper **
+## **Question 02: Pocket Money Shopper**
 
 ### **Objective:**
 
@@ -82,7 +82,7 @@ Print a short message like:
 
 ---
 
-## **Question 03: Big School Supplies Game **
+## **Question 03: Big School Supplies Game**
 
 ### **Objective:**
 
